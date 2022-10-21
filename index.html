@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST_ EXERCISE</title>
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <style>
+        *{
+    letter-spacing: 1px;
+    font-family: verdana;
+    text-transform: capitalize;
+}
+
+body {
+    min-height: 97.5vh;
+    background: url(background.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+.gif{
+    height: 150px;
+    display: block;
+    background: url(pika.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100px;
+}
+.main {
+    padding: 20px;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 10px 24px rgb(161, 89, 40);  
+    background: url(sadsd.jpg);
+    
+}
+
+.main h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color:  rgb(51, 26, 9);
+    font-family:  'Courier New', Courier, monospace;
+}
+
+form {
+    display: inline-block;
+  
+}
+
+input {
+    margin-left: 50px;
+    border: 1px solid rgb(92, 61, 15);
+    border-radius: 6px;
+    background: transparent;
+    color: rgb(26, 24, 20);
+    height: 30px;
+    width: 320px;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: rgb(187, 82, 40);
+    font-size: .7rem;
+}
+
+input:focus {
+    font-size: .9rem;
+    outline: none !important;
+    border-color: rgb(173, 117, 19);
+    box-shadow: 0 0 12px rgb(107, 44, 19);
+}
+
+#button {
+    border: none;
+    height: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: rgb(37, 19, 10);
+    color: #614426;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2px;
+    padding: 3px 15px;
+}
+
+#button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    padding: 5px;
+    color: rgb(70, 32, 9);
+}
+.strike {
+    text-decoration: line-through;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.btn{
+    font-size: .7rem;
+    padding: 3px;
+    background-color: rgb(37, 19, 10);
+    color: #ffffff;
+    text-transform: uppercase;
+    float: right;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+}
+.btn:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+    </style>
+</head>
+<body>
+    <span class="gif"></span>
+    <div class="main">
+     <h2>TODAY'S TO DO LIST</h2> 
+     <form name="toDoList">
+        <input type="text" id="addItem" name="addItem" class="input" placeholder="WHAT ARE YOUR PLANS FOR TODAY?"  />
+     </form>  
+     <button id="button">add</button>
+     <br />
+     <ol>
+     </ol>
+    </div>
+    
+    
+</body>
+</html>
